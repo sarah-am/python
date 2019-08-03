@@ -1,5 +1,4 @@
 
-
 first_number = input("Enter the first number:  ")
 second_number = input("Enter the second number:  ")
 operation = raw_input("Pick an operation (+, -, *, /):  ")
@@ -21,7 +20,5 @@ if type(first_number and second_number) == (int or float):
 		print("The answer is " + str(answer))
 	else: 
 		print("The operation is not valid")
-
 else:
 	print("Numbers are invalid")
-
