@@ -10,7 +10,14 @@ cv["skills"] = []
 skills_cap = [i.capitalize() for i in skills]
 
 print("\nSkills:")
-print('\n'.join('{}) {}'.format(*i) for i in enumerate(skills_cap, 1)) + '\n')
+
+skill_number = 1
+for skill in skills:
+	print("{}) {}".format(skill_number, skills_cap[(skill_number-1)]))
+	skill_number += 1
+print("")
+
+# OR ==> print('\n'.join('{}) {}'.format(*i) for i in enumerate(skills_cap, 1)) + '\n')
 
 skill_1 = input("Choose a skill from the above (number):  ")
 skill_2 = input("Pick another skill (number): ")
