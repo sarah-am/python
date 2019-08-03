@@ -7,7 +7,7 @@ cv["age"] = input("Age:  ")
 cv["experience"] = input("Years of experience:  ")
 cv["skills"] = []
 
-skills_cap = [i.capitalize() for i in skills]
+skills_cap = [skill.capitalize() for skill in skills]
 
 print("\nSkills:")
 
@@ -17,7 +17,8 @@ for skill in skills:
 	skill_number += 1
 print("")
 
-# OR ==> print('\n'.join('{}) {}'.format(*i) for i in enumerate(skills_cap, 1)) + '\n')
+# OR:
+# print('\n'.join('{}) {}'.format(*i) for i in enumerate(skills_cap, 1)) + '\n')
 
 skill_1 = input("Choose a skill from the above (number):  ")
 skill_2 = input("Pick another skill (number): ")
@@ -30,4 +31,4 @@ def check_criteria(cv):
 	else:
 		print("\nUnfortunately, {}, you don't fit our criteria.\n".format(cv["name"]))
 
-check_criteria(cv)
+check_criteria(cv) 
